@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@500&display=swap');
+
+:root{
+  --base-color: #1f1f1f;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: "Montserrat", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.loader{
+  height: 300px;
+  width: 200px;
+  background-size: 200%;
+  background-position: right;
+  animation: loader-animation 3s infinite alternate;
+  background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(106,106,106,1) 23%, rgba(79,79,79,1) 53%, rgba(130,129,129,1) 73%, rgba(255,255,255,1) 100%);
+}
+
+@keyframes loader-animation {
+  0%{
+    background-position: left;
+  }
+  100%{
+    background-position: right;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes parallax {
+  0%{
+    margin-top: 33px;
   }
-  to {
-    transform: rotate(360deg);
+  50%{
+    margin-top: 66px;
+  }
+  100%{
+    margin-top: 100px;
   }
 }

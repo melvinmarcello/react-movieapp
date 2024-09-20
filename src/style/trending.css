@@ -1,0 +1,51 @@
+#trending{
+    font-family: 'Playfair Display', sans-serif;
+    background-color: var(--base-color);
+}
+.heading-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.search-movie{
+    width: 33%;
+    border-radius: 5px;
+    font-weight: bold;  
+    padding: 12px 18px;
+    display: block;
+}
+
+.movies-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.image-wrapper{
+    cursor: pointer;
+    position: relative;
+}
+.image-wrapper img{
+    border-radius: 5px;
+    height: 300px;
+}
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    .search-movie{
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+    .heading-wrapper{
+        justify-content: center;
+    }
+}
