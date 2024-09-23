@@ -50,3 +50,35 @@ a.nav-link{
     color: #0a0a0a !important;
     text-shadow: 0 2px 5px #fff;
 }
+
+
+@media screen and (min-width: 1200px) {
+  nav.navbar{
+    padding: 1rem 4rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  nav.navbar{
+    padding: 1rem 1rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  nav.navbar{
+    padding: 1rem 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  nav.navbar{
+    padding: .5rem .3rem;
+  }
+  .logo{
+    height: 25px;
+  }
+  a.nav-brand{
+    font-size: 30px;
+  }
+  a.nav-link{
+    font-size: 16px;
+  }
+}

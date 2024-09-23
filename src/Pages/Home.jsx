@@ -9,7 +9,7 @@ const Home = () => {
     <>
         <Nav/>
         <Slider/>                
-        {/* <NowPlaying /> */}
+        <NowPlaying />
     </>
   )
 }

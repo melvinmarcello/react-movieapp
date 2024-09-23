@@ -22,7 +22,7 @@ export const Nav = () => {
   return (
     <nav className={colorChange ? 'navbar navbar-scroll' : 'navbar'}>
         <div className="brand-wrapper">          
-          <a className="nav-brand p-2" href="/"> <img src={logo} alt='' className="logo ms-3 me-1" />M-LIX</a>
+          <NavLink className="nav-brand p-2" to="/"> <img src={logo} alt='' className="logo ms-3 me-1" />M-LIX</NavLink>
         </div>
         <div className="routes">
           <NavLink className="nav-link" to="/">Home</NavLink>
