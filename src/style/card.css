@@ -36,3 +36,13 @@
 .movie-wrapper:hover{
     scale: 1.05;
 }
+
+
+
+
+@media screen and (max-width:576px) {
+    .outer-wrapper, .overlay, .image-wrapper img{
+        width: 150px;
+        height: 200px;
+    }
+}

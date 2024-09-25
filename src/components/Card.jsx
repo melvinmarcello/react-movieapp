@@ -5,7 +5,7 @@ import '../style/card.css'
 const Card = ({movie}) => {
   
   return (
-    <Link key={movie.id} to={`/movie/${movie.id}`}>
+    <Link className='outer-wrapper' key={movie.id} to={`/movie/${movie.id}`}>
       <div className="movie-wrapper">
           <div className="image-wrapper">
               <img src={`${process.env.REACT_APP_BASEIMGURL}/w400${movie?.poster_path}`} alt=""/>

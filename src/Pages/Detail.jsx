@@ -21,7 +21,7 @@ const Detail = () => {
                 
     return (          
     <section id="movie-detail">
-        <div className="mobile-title py-3 fixed-top">"{movieDetail.title}"</div>
+        <div className="mobile-title py-3 fixed-top">{movieDetail.title}</div>
         <div className="backdrop-wrapper" style={{backgroundImage: `url(${process.env.REACT_APP_BASEIMGURL}/original/${movieDetail.backdrop_path})`}}>
             <div className="movie-info">                          
                 <h1 className="text-white">

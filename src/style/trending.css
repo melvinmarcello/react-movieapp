@@ -36,10 +36,7 @@
 }
 
 
-
-
-
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {    
     .search-movie{
         width: 50%;
         display: block;
